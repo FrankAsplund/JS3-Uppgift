@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Post testaaaaaa",
+      "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "author": "Marioaaaaaa"
+    },
+    {
+      "id": 2,
+      "title": "Post test",
+      "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "author": "Luigi"
+    },
+    {
+      "id": 3,
+      "title": "Post test",
+      "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "author": "Yoshi"
+    },
+    {
+      "title": "test",
+      "body": "test",
+      "author": "test",
+      "id": 4
+    },
+    {
+      "title": "test2",
+      "body": "test2",
+      "author": "test2",
+      "id": 5
+    }
+  ]
+}
