@@ -203,34 +203,25 @@ export const Home = () => {
           </form>
         </div>
 
-        {/* {search(blogs).map((blog) => { */}
         <div className="blogcard">
-          {blogs.filter((blog) => {
-            if (searchTerm == "") {
-              <Fragment>
-                {editBlogId === blog.id ? (
-                  <EditOnlyCard
-                    handleEditFormSubmit={handleEditFormSubmit}
-                    editFormData={editFormData}
-                    handleEditFormChange={handleEditFormChange}
-                    handleCancelClick={handleCancelClick}
-                  />
-                ) : (
-                  <ReadOnlyCard
-                    blog={blog}
-                    handleEditClick={handleEditClick}
-                    handleDelete={handleDelete}
-                  />
-                )}
-              </Fragment>;
-            } else {
-              <ReadOnlyCard
-                blog={blog}
-                handleEditClick={handleEditClick}
-                handleDelete={handleDelete}
-              />;
-            }
-          })}
+          {blogs.map((blog) => (
+            <Fragment>
+              {editBlogId === blog.id ? (
+                <EditOnlyCard
+                  handleEditFormSubmit={handleEditFormSubmit}
+                  editFormData={editFormData}
+                  handleEditFormChange={handleEditFormChange}
+                  handleCancelClick={handleCancelClick}
+                />
+              ) : (
+                <ReadOnlyCard
+                  blog={blog}
+                  handleEditClick={handleEditClick}
+                  handleDelete={handleDelete}
+                />
+              )}
+            </Fragment>
+          ))}
         </div>
       </div>
     </div>
@@ -240,7 +231,58 @@ export const Home = () => {
 export default Home;
 
 {
-  /* {blogs.map((blog) => (
+  /* {search(blogs).map((blog) => { */
+}
 
-))} */
+{
+  /* {
+  {blogs.map((blog) => (
+    <Fragment>
+    {editBlogId === blog.id ? (
+      <EditOnlyCard
+      handleEditFormSubmit={handleEditFormSubmit}
+      editFormData={editFormData}
+      handleEditFormChange={handleEditFormChange}
+      handleCancelClick={handleCancelClick}
+      />
+      ) : (
+        <ReadOnlyCard
+        blog={blog}
+        handleEditClick={handleEditClick}
+        handleDelete={handleDelete}
+        />
+        )}
+        </Fragment>;
+        
+        ))}
+} */
+}
+
+{
+  /*blogs.filter((blog) => {
+          if (searchTerm == "") {
+            <Fragment>
+              {editBlogId === blog.id ? (
+                <EditOnlyCard
+                  handleEditFormSubmit={handleEditFormSubmit}
+                  editFormData={editFormData}
+                  handleEditFormChange={handleEditFormChange}
+                  handleCancelClick={handleCancelClick}
+                />
+              ) : (
+                <ReadOnlyCard
+                  blog={blog}
+                  handleEditClick={handleEditClick}
+                  handleDelete={handleDelete}
+                />
+              )}
+            </Fragment>;
+          } else {
+            <ReadOnlyCard
+              blog={blog}
+              handleEditClick={handleEditClick}
+              handleDelete={handleDelete}
+            />;
+          }
+        })} */
 }
