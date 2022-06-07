@@ -33,4 +33,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+## JSON Server
+
 Start the JSON server by typing "cd my-app" and then "npx json-server --watch data/db.json --port 8000" in the terminal. If you start the server on port 3000 you will get in trouble.
